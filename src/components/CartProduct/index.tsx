@@ -5,7 +5,7 @@ interface CartProductProps {
   price: number;
 }
 
-const CartProduct: React.FC<CartProductProps> = ({ name, price }) => {
+const CartProduct = ({ name, price }: CartProductProps) => {
   return (
     <div className="cart-product">
       <span>{name}</span>

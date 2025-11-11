@@ -1,4 +1,4 @@
-import IProduct from "../../models/Product";
+import type {IProduct} from "../../models/Product";
 import Amount from "../Amount";
 import CartProduct from "../CartProduct";
 import './style.css';
@@ -7,7 +7,7 @@ interface ICartItemProps {
   product: IProduct;
 }
 
-const CartItem: React.FC<ICartItemProps> = ({ product }) => {
+const CartItem = ({ product }: ICartItemProps) => {
   return (
     <div className="cart-item">
       <CartProduct name={product.name} price={product.price} />

@@ -3,7 +3,7 @@ import Cart from './components/Cart';
 import Header from './components/Header';
 import './style.css';
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="container">
       <Header />

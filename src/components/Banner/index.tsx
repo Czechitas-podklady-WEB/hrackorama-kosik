@@ -1,6 +1,6 @@
 import './style.css';
 
-const Banner: React.FC = () => {
+const Banner = () => {
   return (
     <div className="banner">
       <h1>Hračkorama</h1>

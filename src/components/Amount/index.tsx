@@ -5,7 +5,7 @@ interface IAmountProps {
   value: number;
 }
 
-const Amount: React.FC<IAmountProps> = ({ value }) => {
+const Amount = ({ value }: IAmountProps) => {
   const [count, setCount] = useState(value);
 
   const handelIncrement = () => {
